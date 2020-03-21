@@ -269,7 +269,7 @@ STRIP ?= strip --strip-unneeded
 else
 ifeq ($(SYSTEM),Darwin)
 ifeq ($(origin AR), default)
-AR = libtool -no_warning_for_no_symbols -o
+AR = ar -r
 endif
 STRIP ?= strip -x
 else
